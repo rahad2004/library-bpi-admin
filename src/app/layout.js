@@ -1,16 +1,15 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import { StoreProvider } from "@/store/StoreProvider.jsx";
-import Toast from "@/components/Toast";
 import Loading from "@/components/Loading";
+import Toast from "@/components/Toast";
+import { StoreProvider } from "@/store/StoreProvider.jsx";
 import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
